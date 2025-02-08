@@ -17,8 +17,10 @@ function Theme() {
         localStorage.setItem("theme", "light")
     }
 }
+var transition = window.document.getElementById("transition")
 window.onload = function() {
     var theme = window.localStorage.getItem("theme")
+   
     if (theme === "dark") {
         ball.classList.add("darktheme")
         html.classList.add("darktheme")

@@ -23,7 +23,6 @@ header {
     font-family: roboto;
     align-items: center;
        width: 100%;
-       margin-top: -50px;
     background-color: var(--bgcolor);
     padding: 20px;
     position:fixed;
@@ -102,7 +101,7 @@ header a:hover {
     transform: translateX(300px);
     transition: 0.5s ease-in-out;
     background-color: var(--bgcolor);
-    z-index: 1000;
+    z-index: 100;
     width: 250px;
     margin-top: 20px;
     height: 1080px;
@@ -115,7 +114,7 @@ transition: 0.5s ease-in-out;
     list-style: none;
     margin-left: 50px;
     margin-right: 60px;
-    margin-top: 90px;
+    margin-top: 150px;
 }
 #navbar a {
     text-decoration: none;
@@ -165,124 +164,6 @@ header i:nth-child(even) {
     font-size: 2rem;
     transition: 0.5s ease-in-out;
 }
-#container {
-display: flex;
-margin-top: 40px;
-font-family: roboto;
-padding: 60px;
-background-color: var(--bgcolor);
-transition: 0.5s ease-in-out;
-}
-#script {
-margin: 90px;
-
-}
-#container h1 {
-    text-transform: uppercase;
-    font-weight: 800;
-    color: var(--hover);
-    margin-top: 65px;
-    position: relative;
-}
-#container p {
-    color: var(--font-color);
-    width: 500px;
-    font-size: large;
-    margin-top:30px;
-    font-weight: 600;
-    transition: 0.5s ease-in-out;
-    position: relative;
-}
-#container h1::before {
-position: absolute;
-content: "";
-left: -15px;
-width: 3px;
-height: 40px;
-border-radius: 30px;
-background-color: var(--hover);
-}
-#container img {
-    margin-top: -50px;
-    width: 500px;
-    margin-left: 35px;
-    height: 600px;
-}
-@keyframes scroll {
-    from {
-        opacity: 0.5;
-        scale:0.5;
-    }
-    to {
-        opacity: 1;
-        scale:1;    
-    }
-}
-#container, #where, footer, #coder {
-    animation: scroll 5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-
-}
-
-#where {
-    font-family: roboto;
-    display: flex; 
-    align-items: center;
-    background-color: var(--bgcolor);
-    transition: 0.5s ease-in-out;
-}
-body {
-    background-color: var(--bgcolor);
-    transition: 0.5s ease-in-out;
-}
-#coder {
-    background-color: var(--bgcolor);
-}
-#where h1 {
-    position: relative;
-    color: var(--hover);
-    font-size: 3.0rem;
-    margin-left: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-
-}
-#where p {
-    color: var(--font-color);
-    font-size: 1.9rem;
-    font-weight: 500;
-
-    position: relative;
-}
-#where p::before {
-    position: absolute;
-    width: 8px;
-    border-radius: 30px;
-    height: 115px;
-    background-color: var(--hover);
-    content: "";
-    left: -20px;
-    
-}
-#coder {
-    font-family: roboto;
-    display: grid;
-    place-items: center;
-    transition: 0.5s ease-in-out;
-    margin-top: 40px;
-}
-#coder h1 {
-    margin-top: 20px;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: var(--hover);
-}
-#coder p {
-    font-size: x-large;
-    color: var(--font-color);
-    margin-bottom: 40px;
-}
 footer {
     display: flex;
     justify-content: center;
@@ -329,4 +210,206 @@ margin-top: 2.5px;
 #ball.darktheme {
  margin-left: 39px;
  transition: 0.5s ease-in-out;
+}
+#navbar i {
+    color: white;
+}
+body {
+    background-color: var(--bgcolor);
+    transition: 0.5s ease-in-out;
+}
+#shoppe {
+    padding-top: 100px;
+color: var(--font-color);
+font-family: 'roboto';
+}
+#first, #second, #third {
+    display: flex;
+}
+#first, #second, #third img {
+    width: 400px;
+    height: 400px;
+}
+#first, #second{
+    margin-bottom: 40px;
+}
+#third {
+    margin-bottom: 15px;
+} 
+#first img {
+    margin-right: -950px;
+    padding-top: 60px;
+}
+
+#third h1:hover::after {
+width: 180px;
+}
+.text {
+    padding: 100px;
+}
+.text p {
+    font-weight: 650;
+}
+.text h1 {
+color: var(--hover);
+text-transform: uppercase;
+position: relative;
+}
+.text:nth-child(even) {
+margin-right: -975px;
+margin-left: 75px;
+margin-top: 50px;    
+}
+#second img {
+    padding-left: 150px;
+}
+#second p {
+margin-top: 20px;
+}
+#third p {
+    margin-top: 20px;
+}
+#first button{
+    background-color: var(--bgcolor);
+    border: none;
+    color: var(--font-color);
+margin-left: 20px;
+cursor: pointer ;
+margin-top: 30px;
+font-family: 'roboto';
+font-size: 1.25rem;
+font-weight: 900;
+}
+#second button {
+    background-color: var(--bgcolor);
+    border: none;
+    color: var(--font-color);
+margin-left: 20px;
+cursor: pointer ;
+margin-top: 30px;
+font-family: 'roboto';
+font-size: 1.25rem;
+font-weight: 900;
+    
+}
+#third button {
+    background-color: var(--bgcolor);
+    border: none;
+    color: var(--font-color);
+margin-left: 50px;
+cursor: pointer ;
+margin-top: 20px;
+font-family: 'roboto';
+font-size: 1.25rem;
+font-weight: 900;
+
+}
+#first button:nth-child(odd) {
+    border-radius: 30px;
+    height: 50px;
+    width: 90px;
+    background-color: var(--hover);
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+}
+#second button:nth-child(odd) {
+    border-radius: 30px;
+    height: 50px;
+    width: 90px;
+    background-color: var(--hover);
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+}
+#third button:nth-child(odd) {
+    border-radius: 30px;
+    height: 50px;
+    width: 90px;
+    background-color: var(--hover);
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+}
+#first button:nth-child(odd):hover {
+    background-color: #ff9500;
+}
+#second button:nth-child(odd):hover {
+    background-color: #ff9500;
+}
+#third button:nth-child(odd):hover {
+    background-color: #ff9500;
+}
+#first button:nth-child(even) {
+    border-radius: 30px;
+    background-color: var(--hover);
+    height: 40px;
+    width: 40px;
+    transition: 0.5s ease-in-out;
+}
+#second button:nth-child(even) {
+    border-radius: 30px;
+    background-color: var(--hover);
+    height: 40px;
+    width: 40px;
+    transition: 0.5s ease-in-out;    
+}
+#third button:nth-child(even) {
+    border-radius: 30px;
+    background-color: var(--hover);
+    height: 40px;
+    width: 40px;
+    transition: 0.5s ease-in-out;    
+}
+#first i {
+    font-size: 1.40rem;
+    color: var(--font-color);
+    transition: 0.5s ease-in-out;
+}
+#second i {
+    font-size: 1.40rem;
+    color: var(--font-color);
+    transition: 0.5s ease-in-out;
+}
+#first button:nth-child(even):hover {
+    background-color: #ff9500;
+    transition: 0.5s ease-in-out;
+}
+#second button:nth-child(even):hover {
+    background-color: #ff9500;
+    transition: 0.5s ease-in-out;
+}
+.text h1::after {
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: var(--hover);
+    width: 0%;
+    height: 3px;
+    border-radius: 30px;
+}
+.text h1:first-child:hover::after {
+    width: 200px;
+}
+#first p {
+    margin-top: 20px;
+}
+#third img {
+margin-right: 100px;
+width: 450px;
+height: 450px;
+}
+@keyframes scroll {
+    from {
+        opacity: 0.5;
+        scale:0.5;
+    }
+    to {
+        opacity: 1;
+        scale:1;    
+    }
+}
+#first, #second, #third {
+    animation: scroll 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
